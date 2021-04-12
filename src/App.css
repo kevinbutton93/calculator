@@ -19,10 +19,10 @@
   grid-template-rows: 20% 20% 20% 20% 20%;
   grid-template-areas: 
   "screen screen screen screen screen"
-  "seven eight nine divide divide"
+  "seven eight nine clear divide"
   "four five six multiply multiply"
   "one two three subtract subtract"
-  "zero period equal add add";
+  "zero decimal equals add add";
 }
 
 #screenContainer {
@@ -42,9 +42,9 @@
 #eight {grid-area: eight;}
 #nine {grid-area: nine;}
 #zero {grid-area: zero;}
-#period {grid-area: period;}
-#equal {
-  grid-area: equal;
+#decimal {grid-area: decimal;}
+#equals {
+  grid-area: equals;
   background-color: red;
   width:4em;
 }
@@ -52,10 +52,11 @@
 #multiply {grid-area: multiply;}
 #subtract {grid-area: subtract;}
 #add {grid-area: add;}
+#clear {grid-area: clear;}
 
 .button, .symbal {
   border: 0.1em solid white;
-  height: 3.5em;
+  min-height: 3em;
 }
 
 .button {
